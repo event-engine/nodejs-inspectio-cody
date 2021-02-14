@@ -1,8 +1,8 @@
 {
-  "name": "inspectio-cody",
+  "name": "nodejs-inspectio-cody",
   "version": "0.1.0",
   "description": "",
-  "license": "",
+  "license": "MIT",
   "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p .",

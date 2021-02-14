@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  iio-ic:
+  cody:
     image: sandrokeil/typescript
     volumes:
       - .:/app
