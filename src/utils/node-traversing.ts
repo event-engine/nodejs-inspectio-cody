@@ -1,6 +1,6 @@
+import {List} from "immutable";
 import {Node, NodeType} from "../board/graph";
 import {CodyResponse, CodyResponseType} from "../general/response";
-import {List} from "immutable";
 
 type Success = Node;
 type Error = CodyResponse;

@@ -2,10 +2,13 @@
     "extends": ["tslint:recommended", "tslint-config-prettier"],
     "rules": {
         "interface-name": [true, "never-prefix"],
-        "indent": [true, "spaces", 4],
+        "indent": [true, "spaces", 2],
         "object-literal-sort-keys": false,
         "variable-name": [false],
-        "jsx-no-lambda": false
+        "jsx-no-lambda": false,
+        "no-console": false,
+        "no-require-imports": false,
+        "no-var-requires": false
     },
     "linterOptions": {
         "exclude": [
