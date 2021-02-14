@@ -1,13 +1,14 @@
+import {onCommandHook} from "./src/hooks/onCommandHook";
+import {onAggregateHook} from "./src/hooks/onAggregateHook";
+
 const CodyConfig = {
-  context: {
-    srcFolder: '/exercises/src',
-  },
+  context: {},
   hooks: {
-//  onCommand: onCommandHook,
-//  onAggregate: onAggregateHook,
-//  onEvent: onEventHook,
-//  onPolicy: onPolicyHook,
-//  onDocument: onDocumentHook,
+    onCommand: onCommandHook,
+    onAggregate: onAggregateHook,
+//    onEvent: onEventHook,
+//    onPolicy: onPolicyHook,
+//    onDocument: onDocumentHook,
   }
 };
 
