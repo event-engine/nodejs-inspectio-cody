@@ -1,0 +1,41 @@
+{
+  "name": "inspectio-cody",
+  "version": "0.1.0",
+  "description": "",
+  "license": "",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "watch": "nodemon --watch 'src/**/*.ts' --watch 'codyconfig.ts' --exec 'ts-node' src/index.ts",
+    "prettier": "node_modules/.bin/prettier --single-quote --arrow-parens always --print-width 120 --tab-width 4 --write 'src/**/*.{ts,tsx}'",
+    "tslint": "node_modules/.bin/tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "tslint-fix": "node_modules/.bin/tslint -c tslint.json --fix 'src/**/*.{ts,tsx}'",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "test:ci": "jest --ci --runInBand --silent --colors --coverage"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.7",
+    "async": "^2.6.0",
+    "compression": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "express-sslify": "^1.2.0",
+    "immutable": "^4.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/compression": "^0.0.36",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^11.12.1",
+    "@types/prettier": "^2.1.0",
+    "concurrently": "^3.5.1",
+    "jest": "^26.4.2",
+    "jest-junit": "^11.1.0",
+    "nodemon": "^1.13.0",
+    "ts-jest": "^26.4.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.1"
+  }
+}

@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  iio-ic:
+    image: sandrokeil/typescript
+    volumes:
+      - .:/app
+    user: ${UID}
+    ports:
+    - 3311:3000
+    command: npm run watch
+

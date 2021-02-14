@@ -1,0 +1,6 @@
+/vendor
+app.env
+node_modules
+.env
+env/docker/service/www
+deploy.sh
